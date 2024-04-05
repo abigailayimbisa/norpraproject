@@ -197,11 +197,11 @@ class _MyHomeState extends State<MyHome> {
       color: Colors.grey,
       child: Column(
         children: [
-          Text(Home_text().text1,style: TextStyle(fontSize: 30),),
-          Text(Home_text().text2),
-          Text(Home_text().text3),
-          Text(Home_text().text4),
-          Text(Home_text().text5),
+          Text(Home_text.text1,style: TextStyle(fontSize: 30),),
+          Text(Home_text.text2),
+          Text(Home_text.text3),
+          Text(Home_text.text4),
+          Text(Home_text.text5),
 
         ],
       ),
@@ -210,12 +210,12 @@ class _MyHomeState extends State<MyHome> {
       color: Colors.grey,
       child: Column(
         children: [
-          Text(Home_text().text6,style: TextStyle(fontSize: 30),),
-          Text(Home_text().text7),
-          Text(Home_text().text8),
-          Text(Home_text().text9),
-          Text(Home_text().text10),
-          Text(Home_text().text11),
+          Text(Home_text.text6,style: TextStyle(fontSize: 30),),
+          Text(Home_text.text7),
+          Text(Home_text.text8),
+          Text(Home_text.text9),
+          Text(Home_text.text10),
+          Text(Home_text.text11),
 
         ],
       ),
@@ -224,13 +224,13 @@ class _MyHomeState extends State<MyHome> {
       color: Colors.grey,
       child: Column(
         children: [
-          Text(Home_text().text12,style: TextStyle(fontSize: 30),),
-          Text(Home_text().text13),
-          Text(Home_text().text14),
-          Text(Home_text().text15),
-          Text(Home_text().text16),
-          Text(Home_text().text17),
-          Text(Home_text().text18),
+          Text(Home_text.text12,style: TextStyle(fontSize: 30),),
+          Text(Home_text.text13),
+          Text(Home_text.text14),
+          Text(Home_text.text15),
+          Text(Home_text.text16),
+          Text(Home_text.text17),
+          Text(Home_text.text18),
         ],
       ),
     ),
@@ -279,11 +279,11 @@ class _MyHomeState extends State<MyHome> {
                   padding: const EdgeInsets.all(20.0),
                   child: Column(
                     children: [
-                       Text(Home_text().text19,style: TextStyle(fontSize: 40,fontWeight:FontWeight.bold,color: Colors.white),
+                       Text(Home_text.text19,style: TextStyle(fontSize: 40,fontWeight:FontWeight.bold,color: Colors.white),
                       ),
                       SizedBox(height: 50,),
 
-                      ElevatedButton(onPressed: (){}, child: Text(Home_text().text20),
+                      ElevatedButton(onPressed: (){}, child: Text(Home_text.text20),
                         style: ButtonStyle(
                           shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                             RoundedRectangleBorder(
@@ -304,8 +304,8 @@ class _MyHomeState extends State<MyHome> {
               padding: const EdgeInsets.all(20.0),
               child: Column(
                 children: [
-                  Text(Home_text().text21,style: TextStyle(fontSize: 20,color: WebsiteColors().gold),),
-                  Text(Home_text().text22,style: TextStyle(fontSize: 35,fontWeight:FontWeight.bold),)
+                  Text(Home_text.text21,style: TextStyle(fontSize: 20,color: WebsiteColors.gold),),
+                  Text(Home_text.text22,style: TextStyle(fontSize: 35,fontWeight:FontWeight.bold),)
                 ],
               ),
             ),
@@ -405,8 +405,8 @@ class _MyHomeState extends State<MyHome> {
               padding: const EdgeInsets.all(20.0),
               child: Column(
                 children: [
-                  Text(Home_text().text23,style: TextStyle(fontSize: 20,color: WebsiteColors().gold),),
-                  Text(Home_text().text24,style: TextStyle(fontSize: 35,fontWeight:FontWeight.bold),)
+                  Text(Home_text.text23,style: TextStyle(fontSize: 20,color: WebsiteColors.gold),),
+                  Text(Home_text.text24,style: TextStyle(fontSize: 35,fontWeight:FontWeight.bold),)
                 ],
               ),
             ),
@@ -422,7 +422,7 @@ class _MyHomeState extends State<MyHome> {
                       children: [
                         Container(
                           child: Container(
-                            color: Colors.red,
+                            color: WebsiteColors.red,
                             height: 250,
                             width: 400,
                             child: const Image(
@@ -443,10 +443,10 @@ class _MyHomeState extends State<MyHome> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(Home_text().text25,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
-                          Text(Home_text().text26,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-                          Text(Home_text().text27),
-                          Text(Home_text().text28),
+                          Text(Home_text.text25,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
+                          Text(Home_text.text26,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                          Text(Home_text.text27),
+                          Text(Home_text.text28),
                           SizedBox(height: 10,),
 
 
@@ -460,7 +460,7 @@ class _MyHomeState extends State<MyHome> {
                                 borderRadius: BorderRadius.circular(0),
                               ),
                             ),
-                            child: Text(Home_text().text29),
+                            child: Text(Home_text.text29),
                           ),
 
                         ],
@@ -503,8 +503,8 @@ class _MyHomeState extends State<MyHome> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(Home_text().text30,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
-                          Text(Home_text().text31),
+                          Text(Home_text.text30,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
+                          Text(Home_text.text31),
                           SizedBox(height: 10,),
 
 
@@ -518,7 +518,7 @@ class _MyHomeState extends State<MyHome> {
                                 borderRadius: BorderRadius.circular(0),
                               ),
                             ),
-                            child: Text(Home_text().text32),
+                            child: Text(Home_text.text32),
                           ),
                         ],
                       ),
