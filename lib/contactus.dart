@@ -1,34 +1,17 @@
-import 'package:flutter/material.dart';
-import 'package:norpraproject/contactus.dart';
-import 'package:norpraproject/dropdownpages/option2page.dart';
-import 'package:norpraproject/dropdownpages/option5page.dart';
-import 'package:norpraproject/gallery.dart';
-import 'package:norpraproject/pract.dart';
+import'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:norpraproject/route.dart';
 import 'package:norpraproject/team.dart';
-import 'appbar.dart';
+
 import 'constants.dart';
-import 'dropdownpages/option3page.dart';
-import 'dropdownpages/option4page.dart';
-import 'dropdownpages/option6page.dart';
-import 'home.dart';
-
-void main(){
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    routes: pages,
-    home:Norpra(),
-  ));
-}
-
-class Norpra extends StatefulWidget {
-  const Norpra({super.key});
+class Contact_us extends StatefulWidget {
+  const Contact_us({super.key});
 
   @override
-  State<Norpra> createState() => _NorpraState();
+  State<Contact_us> createState() => _Contact_usState();
 }
 
-class _NorpraState extends State<Norpra> {
+class _Contact_usState extends State<Contact_us> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -234,10 +217,7 @@ class _NorpraState extends State<Norpra> {
                               child: InkWell(
                                 onTap: () {
 
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(builder: (context) => Contact_us()),
-                                  );
+                                  Navigator.pushNamed(context, Routes.contact);
 
                                 },
                                 child: Text(Appbar_constants.text9, style: TextStyle(fontSize: 15),),
@@ -270,12 +250,55 @@ class _NorpraState extends State<Norpra> {
 
 
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            MyHome(),
-          ],
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              SizedBox(height: 200,),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 20.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Text(Contactus_text.text1, style: GoogleFonts.abel(fontSize: 40,fontWeight:FontWeight.bold,)),
+                      ),
+
+                      Container(
+                        width: 500,
+                        height: 300,
+                        child: Card(
+                          elevation: 20,
+                          color:Colors.amberAccent,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Text(Contactus_text.text2, style: GoogleFonts.abel(fontSize: 20,)),
+                              Text(Contactus_text.text3, style: GoogleFonts.abel(fontSize: 20,)),
+                              Text(Contactus_text.text4, style: GoogleFonts.abel(fontSize: 20,)),
+                              Text(Contactus_text.text5, style: GoogleFonts.abel(fontSize: 20,)),
+                              Text(Contactus_text.text6, style: GoogleFonts.abel(fontSize: 20,)),
+                              Text(Contactus_text.text7, style: GoogleFonts.abel(fontSize: 20,)),
+
+                            ],
+                          ),
+                        ),
+                      )
+
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
   }
 }
+
