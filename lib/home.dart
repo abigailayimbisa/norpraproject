@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:norpraproject/appbar.dart';
 import 'package:norpraproject/constants.dart';
 import 'package:norpraproject/gallery.dart';
 import 'package:norpraproject/team.dart';
@@ -250,14 +249,11 @@ class _MyHomeState extends State<MyHome> {
     //   ),
     // ),
   ];
-
   @override
   Widget build(BuildContext context) {
     return Column(
         children: [
           SizedBox(height: 200,),
-
-
           // Container(
           //   height: 200,
           //   child: GridView.builder(
@@ -620,43 +616,11 @@ class _MyHomeState extends State<MyHome> {
                      ),
                    ],
                  ),
-
-
-
-
-
-
                ],
              ),
            ),
          ),
        ),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
           // Padding(
           //   padding: const EdgeInsets.only(left: 100.0,right: 100,bottom: 50),
@@ -874,15 +838,9 @@ class _MyHomeState extends State<MyHome> {
                   ),
                 ],
               ),
-
-
             ],
           )
-
-
         ],
-
       );
-
   }
 }
